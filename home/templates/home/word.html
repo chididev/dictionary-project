@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <form action='word' class="container pt-3">
+    <div class="input-group">
+      <div class="form-outline">
+        <input id="search-focus" type="search" name="search" class="form-control" />
+        <label class="form-label" for="form1">Search</label>
+      </div>
+        <button type="submit" class="btn btn-primary">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </form>
+  <div class="container pt-3">
+    <h3>Meaning:</h3>
+    <p>{{meaning}}</p>
+    <h3>Synonym:</h3>
+    <p>{{synonyms}}</p>
+    <h3>Antonyms:</h3>
+    <p>{{antonyms}}</p>
+    <h3>Translations:</h3>
+    <p>{{translations}}</p>
+  </div>
+{% endblock %}
