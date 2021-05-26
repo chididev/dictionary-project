@@ -13,7 +13,7 @@ def word(request):
     meaning = dictionary.meaning(search)
     synonyms = dictionary.synonym(search)
     antonyms = dictionary.antonym(search)
-    translations = dictionary.translate(search, 'french, greek, latin')
+    translations = dictionary.translate(search, 'french')
     context = {
         'meaning':meaning,
         'synonyms':synonyms,
