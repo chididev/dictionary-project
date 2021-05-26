@@ -15,6 +15,7 @@ def word(request):
     antonyms = dictionary.antonym(search)
     translations = dictionary.translate(search, 'french')
     context = {
+        'search':search,
         'meaning':meaning,
         'synonyms':synonyms,
         'antonyms':antonyms,
