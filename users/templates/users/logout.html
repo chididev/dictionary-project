@@ -6,7 +6,7 @@
   <div class="container">
     <form method="POST">
       {% csrf_token %}
-      <h2>are you sure you want to logout?</h2>
+      <h2>are you absolutely sure you want to logout?</h2>
       {{ form|crispy }}
       <button type="submit">logout!</button>
     </form>

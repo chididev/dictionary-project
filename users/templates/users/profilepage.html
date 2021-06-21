@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container-fluid pt-2 pb-2">
+  <h1>Profile Page</h1>
+  <h3>{{ user.profile.username }}</h3>
+  <img src="{{ user.profile.profile_picture.url }}" alt="profilepic">
+  <p>{{ user.profile.location }}</p>
+</div>
+{% endblock %}
